@@ -11,9 +11,6 @@
     <a href="https://pkg.go.dev/github.com/0xfnzero/pons-trade-sdk">
         <img src="https://pkg.go.dev/badge/github.com/0xfnzero/pons-trade-sdk.svg" alt="Go Reference">
     </a>
-    <a href="https://github.com/0xfnzero/pons-trade-sdk/actions/workflows/ci.yml">
-        <img src="https://github.com/0xfnzero/pons-trade-sdk/actions/workflows/ci.yml/badge.svg" alt="CI">
-    </a>
     <a href="https://github.com/0xfnzero/pons-trade-sdk/releases/latest">
         <img src="https://img.shields.io/github/v/release/0xfnzero/pons-trade-sdk" alt="Release">
     </a>
@@ -227,7 +224,6 @@ tx, err = client.SweepPoolFees(auth, poolID, minConversionQuoteOut, minBuybackTo
 .
 ├── ponstrade/                 # Trade SDK package
 ├── examples/basic/            # 基础报价示例
-├── .github/workflows/ci.yml   # GitHub Actions 验证
 ├── go.mod
 └── go.sum
 ```
