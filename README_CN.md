@@ -72,18 +72,29 @@
 
 ### 源码克隆
 
+在项目根目录中克隆 SDK，并固定到已发布的 `v0.1.0`：
+
 ```bash
-git clone https://github.com/0xfnzero/pons-trade-sdk
-cd pons-trade-sdk
-go mod tidy
+cd your_project_root_directory
+git clone --branch v0.1.0 --depth 1 https://github.com/0xfnzero/pons-trade-sdk
 ```
 
-在另一个本地模块中引用：
+在您项目的 `go.mod` 中添加本地模块依赖：
 
 ```go
 require github.com/0xfnzero/pons-trade-sdk v0.1.0
 
-replace github.com/0xfnzero/pons-trade-sdk => ../pons-trade-sdk
+replace github.com/0xfnzero/pons-trade-sdk => ./pons-trade-sdk
+```
+
+然后解析依赖，并按正常方式导入 SDK package：
+
+```bash
+go mod tidy
+```
+
+```go
+import "github.com/0xfnzero/pons-trade-sdk/ponstrade"
 ```
 
 ### Go Modules
