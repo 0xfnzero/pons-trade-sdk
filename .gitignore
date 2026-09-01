@@ -1,0 +1,14 @@
+dist/
+build/
+coverage/
+node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# Local multi-module workspace; pons-parser-sdk is published separately.
+pons-parser-sdk/
+go.work
+go.work.sum
